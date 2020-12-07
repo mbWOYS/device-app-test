@@ -1,0 +1,19 @@
+
+.Modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ModalContent {
+    max-width: 800px;
+    padding: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--hover-control-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}

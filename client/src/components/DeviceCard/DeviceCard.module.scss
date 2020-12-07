@@ -1,0 +1,46 @@
+
+.Modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ModalContent {
+    max-width: 600px;
+    min-height: 250px;
+    padding: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--hover-control-color);
+    font-family: "Open Sans", sans-serif;
+    color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    .Price {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-family: Dosis, sans-serif;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Modal {
+    .ModalContent {
+      flex-direction: column;
+      max-width: 250px;
+      font-size: 0.8rem;
+
+      .ButtonHolder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+    }
+  }
+}

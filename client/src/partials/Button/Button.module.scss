@@ -1,0 +1,42 @@
+
+.Button {
+  width: 150px;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  outline: none;
+
+  .ButtonBox {
+    height: inherit;
+    width: inherit;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  .AddToCard {
+    background-color: var(--add-bg);
+    border: 1px dashed var(--add-control-color);
+    color: var(--add-control-color);
+    cursor: pointer;
+   }
+
+  .RemoveFromCard {
+    background-color: var(--remove-bg);
+    border: 1px dashed var(--remove-control-color);
+    color: var(--remove-control-color);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Button {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    font-size: 1rem;
+
+    .ButtonBox {
+      padding: 10px;
+    }
+  }
+}

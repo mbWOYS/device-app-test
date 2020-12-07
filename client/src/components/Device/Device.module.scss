@@ -1,0 +1,35 @@
+
+.Device {
+  background-color: var(--main-theme-color);
+  color: var(--white-color);
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 20px;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 1px 1px 10px 0 var(--hover-control-color);
+  }
+
+  h2 {
+    font-family: Dosis, sans-serif;
+  }
+
+  .DeviceContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Device {
+    margin: 15px;
+    font-size: 0.7rem;
+  }
+}

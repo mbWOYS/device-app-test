@@ -1,0 +1,40 @@
+
+.Header {
+  background-color: var(--main-theme-color);
+  color: var(--white-color);
+  max-height: 70px;
+  font-size: 0.8rem;
+  padding: 10px 15px;
+
+  .HeaderContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Dosis;
+
+    .CardBtn {
+      img {
+        max-height: 50px;
+      }
+    }
+
+    .Total {
+      background: var(--alert);
+      width: 17px;
+      height: 17px;
+      padding: 4px;
+      text-align: center;
+      position: relative;
+      top: -20px;
+      left: -10px;
+      border-radius: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Header {
+    max-height: 60px;
+    font-size: 0.7rem;
+  }
+}
