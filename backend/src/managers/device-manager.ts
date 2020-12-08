@@ -29,10 +29,6 @@ class DeviceManager {
         return Device.findByPk(this.req.params.deviceId).then(device => {
             const prevTotalQty = device?.getDataValue("totalQty");
 
-            if (prevTotalQty && prevTotalQty < addedToCard || addedToCard < 0 || totalQty < 0) {
-                throw new Error("Value is invalid");
-            }
-
             device?.setDataValue("totalQty", totalQty);
             device?.setDataValue("addedToCard", addedToCard);
 
